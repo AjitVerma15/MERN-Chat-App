@@ -11,7 +11,7 @@ const accessChat = asyncHandler(async (req, res) => {
 
   var isChat = await Chat.find({
     isGroupChat: false,
-    $add: [
+    $and: [
       { users: { $elemMatch: { $eq: req.user._id } } },
       { users: { $elemMatch: { $eq: userId } } },
     ],
@@ -25,7 +25,7 @@ const accessChat = asyncHandler(async (req, res) => {
   });
 
   if (isChat.length > 0) {
-    res.send(isChat[0]);
+    res.status(200).send(isChat[0]);
   } else {
     var chatData = {
       chatName: "sender",

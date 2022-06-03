@@ -12,10 +12,10 @@ export const ChatPage = () => {
     <div style={{ width: "100%" }}>
       {user && <SideDrawer />}
       <Box
-        display={"flex"}
+        display="flex"
         justifyContent={"space-between"}
         width={"100%"}
-        h={"91.5vh"}
+        height={"91.5vh"}
         p={"10px"}
       >
         {user && <MyChat fetchAgain={fetchAgain} />}
