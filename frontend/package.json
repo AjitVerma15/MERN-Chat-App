@@ -8,6 +8,7 @@
     "@chakra-ui/layout": "^2.0.0",
     "@chakra-ui/react": "^2.0.2",
     "@chakra-ui/tooltip": "^2.0.0",
+    "@lottiefiles/react-lottie-player": "^3.4.7",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",

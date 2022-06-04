@@ -71,8 +71,12 @@ const Login = () => {
       })
       .catch(function (error) {
         console.log(error);
+        const errorMessage =
+          error?.response?.data?.error ||
+          error?.response?.statusText ||
+          error.message;
         toast({
-          title: error.response ? error?.response?.error : error.message,
+          title: errorMessage,
           status: "error",
           duration: 5000,
           isClosable: true,
@@ -97,6 +101,7 @@ const Login = () => {
         placeholder="Password"
         id="login-password"
         label="Password"
+        value={password}
         onChange={(e) => setPassword(e.target.value)}
         show={show}
         handleClick={handleClick}
