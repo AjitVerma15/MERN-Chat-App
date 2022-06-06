@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "heroku-postbuild": "NODE_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix",
+    "heroku-postbuild": "NODE_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ajit Verma",
