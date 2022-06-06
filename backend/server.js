@@ -10,7 +10,7 @@ dotenv.config();
 databaseConnection();
 const app = express();
 
-const PORT = process.env.BACKEND_PORT;
+const PORT = process.env.PORT;
 app.use(express.json()); // to accept json data
 
 app.use("/api/user", userRoutes);
