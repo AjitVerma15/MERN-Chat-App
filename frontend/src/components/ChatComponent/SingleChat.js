@@ -21,7 +21,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { ScrollableMessage } from "./ScrollableMessage";
 import animationData from "../../animation/typingIndicator.json";
 import io from "socket.io-client";
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://av-mern-chat-app.herokuapp.com/";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
