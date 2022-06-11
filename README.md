@@ -60,8 +60,8 @@ Start the Client
 
 ### Authenticaton
 
-![](https://github.com/AjitVerma15/MERN-Chat-App/blob/main/frontend/images/Auth.PNG)
-![](https://github.com/AjitVerma15/MERN-Chat-App/blob/main/frontend/images/SignUp.PNG)
+![](https://github.com/AjitVerma15/MERN-Chat-App/blob/main/frontend/images/Auth.png)
+![](https://github.com/AjitVerma15/MERN-Chat-App/blob/main/frontend/images/SignUp.png)
 
 ### Real Time Chatting with Typing indicators
 
@@ -69,7 +69,7 @@ Start the Client
 
 ### One to One chat
 
-![](https://github.com/AjitVerma15/MERN-Chat-App/blob/main/frontend/images/chatting.png)
+![](https://github.com/AjitVerma15/MERN-Chat-App/blob/main/frontend/images/Chatting.png)
 
 ### Search Users
 
