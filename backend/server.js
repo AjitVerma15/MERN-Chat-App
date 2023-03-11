@@ -10,7 +10,7 @@ dotenv.config();
 databaseConnection();
 const app = express();
 
-const PORT = process.env.BACKEND_PORT;
+const PORT = process.env.PORT;
 app.use(express.json()); // to accept json data
 
 app.use("/api/user", userRoutes);
@@ -45,8 +45,13 @@ const server = app.listen(PORT, () => {
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
+<<<<<<< HEAD
     origin: "http://localhost:3000",
     credentials: true,
+=======
+    origin: "https://av-mern-chat-app.herokuapp.com/",
+    // credentials: true,
+>>>>>>> c11559bb7ee047953f6430649e16ff655a6ae249
   },
 });
 io.on("connection", (socket) => {
