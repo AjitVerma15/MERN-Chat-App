@@ -10,7 +10,7 @@ import {
   InputRightElement,
 } from "@chakra-ui/react";
 import { MdSend } from "react-icons/md";
-import { ArrowBackIcon, CheckIcon } from "@chakra-ui/icons";
+import { ArrowBackIcon } from "@chakra-ui/icons";
 import { getSender, getSenderFull } from "../../utilities/utils";
 import ProfileModal from "./Profile";
 import { useEffect, useRef, useState } from "react";
@@ -21,7 +21,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { ScrollableMessage } from "./ScrollableMessage";
 import animationData from "../../animation/typingIndicator.json";
 import io from "socket.io-client";
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://av-mern-chat-app.herokuapp.com/";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -33,15 +33,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
   const [istyping, setIsTyping] = useState(false);
   const toast = useToast();
   const messageScreen = useRef(null);
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   const { selectedChat, setSelectedChat, user, notification, setNotification } =
     ChatState();
 
@@ -63,6 +54,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     if (selectedChat) {
       scrollToBottom();
     }
+    // eslint-disable-next-line
   }, [messages]);
 
   const fetchMessages = async () => {

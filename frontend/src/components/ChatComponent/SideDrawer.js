@@ -1,5 +1,4 @@
 import { Box, Text } from "@chakra-ui/layout";
-import { Tooltip } from "@chakra-ui/tooltip";
 import "./chat.css";
 import {
   Avatar,
@@ -22,7 +21,7 @@ import {
 } from "@chakra-ui/modal";
 import { Spinner } from "@chakra-ui/spinner";
 import React, { useState } from "react";
-import { BellIcon, ChevronDownIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import { ChatState } from "../../context/ChatProvider";
 import ProfileModal from "./Profile";
 import { useNavigate } from "react-router-dom";
